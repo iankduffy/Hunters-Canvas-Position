@@ -1,0 +1,22 @@
+.container {
+  margin: 0 auto;
+  max-width: $grid-length * 1px;
+
+  &--fluid {
+    margin: 0;
+    max-width: 100%;
+    display: flex; 
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+@for $i from 1 through $grid-cols {
+  .col-#{$i} {
+    width: (100 / ($grid-cols / $i)) * 1%;
+  }
+}

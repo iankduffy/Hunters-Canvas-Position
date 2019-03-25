@@ -1,0 +1,31 @@
+body {
+  font-family: $global-font-styles; 
+}
+
+p {
+  margin-bottom: 10px; 
+}
+
+$heading-size-1: 32px;
+$heading-size-2: 32px;
+$heading-size-3: 25px;
+$heading-size-4: 18px;
+$heading-size-5: 14px;
+//caption sizd
+$heading-size-6: 20px;
+
+$header-weight: 300;
+
+h1, 
+%h1, 
+.h1 {
+  font-size: $heading-size-1; 
+  font-weight: $header-weight;
+}
+
+h2, 
+%h2, 
+.h2 {
+  font-size: $heading-size-2; 
+  font-weight: $header-weight;
+}
