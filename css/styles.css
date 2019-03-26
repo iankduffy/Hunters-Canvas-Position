@@ -15,6 +15,7 @@
 
 canvas {
   border: 1px solid #000;
+  width: 100%;
 }
 
 .u-pad-t-sm {
@@ -318,7 +319,9 @@ h2,
 header {
   width: 100%;
   background: #674880;
-  min-height: 8vh;
+  min-height: 9vh;
+  color: #fff;
+  position: relative;
 }
 
 .o-side-nav {
@@ -328,5 +331,20 @@ header {
 .o-side-nav--item {
   color: #fff;
   text-decoration: none;
+}
+
+.o-logo {
+  width: 120px;
+  min-height: 8vh;
+  display: inline;
+  float: left;
+}
+
+.c-canvas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 500px;
+  min-width: 500px;
 }
 /*# sourceMappingURL=styles.css.map */
