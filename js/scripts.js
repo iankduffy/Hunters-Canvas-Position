@@ -20,28 +20,73 @@ background_image.onload = function () {
 
 let rugby_position = {
   1: {
-    "x": 230,
-    "y": 100
+    "x": 250,
+    "y": 60
   },
   2: { 
-    "x": 340, 
-    "y": 100
+    "x": 360, 
+    "y": 60
   },
   3: { 
-    "x": 450, 
-    "y": 100
+    "x": 470, 
+    "y": 60
   },
   4: { 
-    "x": 280, 
-    "y": 230
+    "x": 300, 
+    "y": 190
+  }, 
+  5: { 
+    "x": 410, 
+    "y": 190
+  }, 
+  6: {
+    "x": 190,
+    "y": 270
+  },
+  7: {
+    "x": 530, 
+    "y": 270
+  }, 
+  8: {
+    "x": 360, 
+    "y": 310
+  },
+  9: {
+    "x": 430, 
+    "y": 430
+  }, 
+  10: {
+    "x": 550, 
+    "y": 480
+  }, 
+  11: {
+    "x": 90, 
+    "y": 650
+  },
+  12: {
+    "x": 670, 
+    "y": 550
+  },
+  13: {
+    "x": 780, 
+    "y": 600
+  },
+  14: {
+    "x": 890, 
+    "y": 660
+  },
+  15: {
+    "x": 490, 
+    "y": 720
   }
+
 }
 
 
 console.table(rugby_position)
 
 let position = 150; 
-for (let i = 1; i < 5; i++){
+for (let i = 0; i < 20; i++){
   let kit_image = new Image(); 
   kit_image.src = "assets/Kit-imag-1.png";
 
@@ -64,12 +109,12 @@ let match_form = document.getElementById("JS-Form")
     let away_input = document.getElementById("js-input-away").value.toUpperCase()
     let match_date = document.getElementById("js-input-date").value
     c.textAlign = "center";
-    c.font = "38px Arial";
+    c.font = "36px Arial";
     c.fillStyle = '#fff';
     c.fillText(home_input, 830, 300);
     c.fillText(away_input, 830, 400);
     c.font = "48px Arial";
-    c.fillText("VS", 830, 350);
+    c.fillText("VS", 830, 355);
     console.log(match_date)
   })
     
