@@ -78,6 +78,42 @@ let rugby_position = {
   15: {
     "x": 490, 
     "y": 720
+  },
+  16: {
+    "x": 70, 
+    "y": 920
+  },
+  17: {
+    "x": 200, 
+    "y": 920
+  },
+  18: {
+    "x": 330, 
+    "y": 920
+  },
+  19: {
+    "x": 460, 
+    "y": 920
+  }, 
+  20: {
+    "x": 580, 
+    "y": 920
+  }, 
+  21: {
+    "x": 700, 
+    "y": 920
+  },
+  21: {
+    "x": 800, 
+    "y": 920
+  }, 
+  22: {
+    "x": 900, 
+    "y": 920
+  }, 
+  23: {
+    "x": 1020, 
+    "y": 920
   }
 
 }
@@ -85,17 +121,49 @@ let rugby_position = {
 
 console.table(rugby_position)
 
-let position = 150; 
-for (let i = 0; i < 20; i++){
+// Forwards 
+for (let i = 0; i < 9; i++){
   let kit_image = new Image(); 
   kit_image.src = "assets/Kit-imag-1.png";
 
   kit_image.onload = function() {
     
-    position += 80
     console.log(rugby_position[i].x)
     c.drawImage(this, rugby_position[i].x, rugby_position[i].y, 70, 70 * this.height / this.width)
     c.textAlign = "center";
+    c.fillStyle = '#fff';
+    c.font = "18px Arial";
+    c.fillText("Hello world", (rugby_position[i].x + 35), rugby_position[i].y + 110)
+  }
+}
+
+// Backs
+for (let i = 9; i < 15; i++){
+  let kit_image = new Image(); 
+  kit_image.src = "assets/Kit-imag-1.png";
+
+  kit_image.onload = function() {
+    
+    console.log(rugby_position[i].x)
+    c.drawImage(this, rugby_position[i].x, rugby_position[i].y, 70, 70 * this.height / this.width)
+    c.textAlign = "center";
+    c.fillStyle = '#fff';
+    c.font = "18px Arial";
+    c.fillText("Hello world", (rugby_position[i].x + 35), rugby_position[i].y + 110)
+  }
+}
+
+// Subs
+for (let i = 15; i < 24; i++){
+  let kit_image = new Image(); 
+  kit_image.src = "assets/Kit-imag-1.png";
+
+  kit_image.onload = function() {
+    
+    console.log(rugby_position[i].x)
+    c.drawImage(this, rugby_position[i].x, rugby_position[i].y, 70, 70 * this.height / this.width)
+    c.textAlign = "center";
+    c.fillStyle = '#fff';
     c.font = "18px Arial";
     c.fillText("Hello world", (rugby_position[i].x + 35), rugby_position[i].y + 110)
   }
