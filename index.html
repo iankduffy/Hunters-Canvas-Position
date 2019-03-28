@@ -32,12 +32,18 @@
             <li><span class="c-progress-disc">5</span>Complete</li>
           </ul>
         </div>
-        <div class="">
+        <div class="u-mar-v-lg">
           <div>
-            <form action="" id="JS-Form">
-              <input type="text" placeholder="Leeds Hunters" id="js-input-home" name="home">
-              <input type="text" value="Newcastle Ravens" id="js-input-away" name="home">
-              <input type="date" value="2019-03-20" id="js-input-date" name="home">
+            <form action="" id="JS-Form" class="o-form">
+              <label class="o-input--label" for="home">
+                Home Team:
+                <input  class="o-input" type="text" placeholder="Leeds Hunters" id="js-input-home" name="home">
+              </label>
+              <label  class="o-input--label" for="away">
+                Away Team:
+                <input  class="o-input" type="text" value="Newcastle Ravens" id="js-input-away" name="away">
+              </label>
+              <input  class="o-input" type="date" value="2019-03-20" id="js-input-date" name="home">
               <input type="submit" />
             </form>
             <form action="" id="JS-Form-forwards">

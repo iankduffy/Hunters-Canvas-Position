@@ -1,0 +1,15 @@
+.o-form{  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.o-input {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 5px 0;
+
+  &--label{
+    width: 50%;
+    flex: 0 1 50%; 
+  }
+}
