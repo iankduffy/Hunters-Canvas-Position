@@ -642,13 +642,19 @@ header {
   width: 100%;
   padding: 10px 5px;
   margin: 5px 0;
+  border-radius: 5px;
 }
 
 .o-input--label {
   width: 50%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.o-input--submit {
+  width: 100%;
+  margin: 2.5% 0;
 }
 
 .c-progress {
