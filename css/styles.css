@@ -688,12 +688,15 @@ header {
 }
 
 .c-btn {
-  display: inline-block;
+  display: block;
   padding: 2% 5%;
   background: #674880;
   color: #fff;
   border-radius: 50px;
   cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: center;
 }
 
 .c-btn:hover {
