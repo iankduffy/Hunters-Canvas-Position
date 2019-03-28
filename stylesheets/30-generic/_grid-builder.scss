@@ -19,4 +19,14 @@
   .col-#{$i} {
     width: (100 / ($grid-cols / $i)) * 1%;
   }
+
+  $sizes: xs, sm, md, lg; 
+
+  @each $mq, $size in $sizes {
+    .col-#{$i}\@#{$mq} {
+      @include breakpoint-max($mq) {
+        width: (100 / ($grid-cols / $i)) * 1%;
+      }
+    }
+  }
 }

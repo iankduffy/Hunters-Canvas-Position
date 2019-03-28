@@ -21,7 +21,7 @@ background_image.onload = function () {
 let rugby_position = {
   1: {
     "x": 250,
-    "y": 60
+    "y": 30
   },
   2: { 
     "x": 360, 
@@ -29,7 +29,7 @@ let rugby_position = {
   },
   3: { 
     "x": 470, 
-    "y": 60
+    "y": 30
   },
   4: { 
     "x": 300, 
@@ -80,92 +80,69 @@ let rugby_position = {
     "y": 720
   },
   16: {
-    "x": 70, 
+    "x": 50, 
     "y": 920
   },
   17: {
-    "x": 200, 
+    "x": 180, 
     "y": 920
   },
   18: {
-    "x": 330, 
+    "x": 310, 
     "y": 920
   },
   19: {
-    "x": 460, 
+    "x": 440, 
     "y": 920
   }, 
   20: {
-    "x": 580, 
+    "x": 570, 
     "y": 920
   }, 
   21: {
     "x": 700, 
     "y": 920
   },
-  21: {
-    "x": 800, 
-    "y": 920
-  }, 
   22: {
-    "x": 900, 
+    "x": 830, 
     "y": 920
   }, 
   23: {
-    "x": 1020, 
+    "x": 960, 
     "y": 920
   }
-
 }
 
-
-console.table(rugby_position)
-
 // Forwards 
-for (let i = 0; i < 9; i++){
+for (let i = 1; i < 9; i++){
   let kit_image = new Image(); 
   kit_image.src = "assets/Kit-imag-1.png";
 
   kit_image.onload = function() {
     
-    console.log(rugby_position[i].x)
     c.drawImage(this, rugby_position[i].x, rugby_position[i].y, 70, 70 * this.height / this.width)
-    c.textAlign = "center";
-    c.fillStyle = '#fff';
-    c.font = "18px Arial";
-    c.fillText("Hello world", (rugby_position[i].x + 35), rugby_position[i].y + 110)
   }
 }
 
 // Backs
-for (let i = 9; i < 15; i++){
+for (let i = 9; i < 16; i++){
   let kit_image = new Image(); 
   kit_image.src = "assets/Kit-imag-1.png";
 
   kit_image.onload = function() {
-    
-    console.log(rugby_position[i].x)
+
     c.drawImage(this, rugby_position[i].x, rugby_position[i].y, 70, 70 * this.height / this.width)
-    c.textAlign = "center";
-    c.fillStyle = '#fff';
-    c.font = "18px Arial";
-    c.fillText("Hello world", (rugby_position[i].x + 35), rugby_position[i].y + 110)
   }
 }
 
 // Subs
-for (let i = 15; i < 24; i++){
+for (let i = 16; i < 24; i++){
   let kit_image = new Image(); 
   kit_image.src = "assets/Kit-imag-1.png";
 
   kit_image.onload = function() {
     
-    console.log(rugby_position[i].x)
-    c.drawImage(this, rugby_position[i].x, rugby_position[i].y, 70, 70 * this.height / this.width)
-    c.textAlign = "center";
-    c.fillStyle = '#fff';
-    c.font = "18px Arial";
-    c.fillText("Hello world", (rugby_position[i].x + 35), rugby_position[i].y + 110)
+    c.drawImage(this, rugby_position[i].x, rugby_position[i].y, 60, 60 * this.height / this.width)
   }
 }
 
@@ -175,7 +152,7 @@ let match_form = document.getElementById("JS-Form")
     e.preventDefault(); 
     let home_input = document.getElementById("js-input-home").value.toUpperCase()
     let away_input = document.getElementById("js-input-away").value.toUpperCase()
-    let match_date = document.getElementById("js-input-date").value
+    // let match_date = document.getElementById("js-input-date").value
     c.textAlign = "center";
     c.font = "36px Arial";
     c.fillStyle = '#fff';
@@ -183,6 +160,43 @@ let match_form = document.getElementById("JS-Form")
     c.fillText(away_input, 830, 400);
     c.font = "48px Arial";
     c.fillText("VS", 830, 355);
-    console.log(match_date)
   })
     
+let forwards_form = document.getElementById("JS-Form-forwards")
+
+forwards_form.addEventListener("submit", function(e) {
+    e.preventDefault(); 
+    for (let a = 1; a < 9; a++) {
+      c.textAlign = "center";
+      c.fillStyle = '#fff';
+      c.font = "24px Arial";
+      c.fillText(this.elements[a - 1].value, (rugby_position[a].x + 35), rugby_position[a].y + 110)
+    }
+  })
+
+let backs_form = document.getElementById("JS-Form-backs")
+
+backs_form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    for (let b = 9; b < 16; b++) {
+      console.log(this.elements[b])
+      c.textAlign = "center";
+      c.fillStyle = '#fff';
+      c.font = "24px Arial";
+      c.fillText(this.elements[b - 9].value, (rugby_position[b].x + 35), rugby_position[b].y + 110)
+    }
+  })
+
+let subs_form = document.getElementById("JS-Form-sub")
+
+subs_form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    for (let b = 16; b < 24; b++) {
+      console.log(this.elements[b])
+      c.textAlign = "center";
+      c.fillStyle = '#fff';
+      c.font = "24px Arial";
+      c.fillText(this.elements[b - 16].value, (rugby_position[b].x + 30), rugby_position[b].y + 110)
+    }
+  })
+      
