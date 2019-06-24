@@ -636,13 +636,28 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  color: #674880;
+  text-transform: uppercase;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.o-form-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .o-input {
   width: 100%;
   padding: 10px 5px;
-  margin: 5px 0;
-  border-radius: 5px;
+  margin: 10px 0;
+  border-radius: 2px;
+  border: 1px solid #282828;
 }
 
 .o-input--label {
@@ -655,6 +670,9 @@ header {
 .o-input--submit {
   width: 100%;
   margin: 2.5% 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .c-progress {
@@ -728,5 +746,9 @@ header {
 
 .c-btn:hover {
   background: rgba(103, 72, 128, 0.9);
+}
+
+.u-of-hidden {
+  overflow: hidden;
 }
 /*# sourceMappingURL=styles.css.map */

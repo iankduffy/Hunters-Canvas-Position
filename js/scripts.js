@@ -187,7 +187,7 @@ backs_form.addEventListener("submit", function(e) {
     }
   })
 
-let subs_form = document.getElementById("JS-Form-sub")
+let subs_form = document.getElementById("JS-Form-Subs")
 
 subs_form.addEventListener("submit", function(e) {
     e.preventDefault();
@@ -200,3 +200,12 @@ subs_form.addEventListener("submit", function(e) {
     }
   })
       
+
+let forms = document.getElementsByClassName("js-form"); 
+
+Array.prototype.forEach.call(forms, form  => {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log(this.event.dataset)
+  })
+})
