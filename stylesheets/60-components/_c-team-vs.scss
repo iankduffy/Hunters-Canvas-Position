@@ -1,0 +1,16 @@
+.c-team-vs {
+  .sections {
+    text-align: center;
+    flex: 1 1 33%;
+  }
+
+  .logo {
+    height: 200px;
+    width: 100%; 
+    background: {
+      size: contain; 
+      position: center;
+      repeat: no-repeat; 
+    }
+  }
+}
