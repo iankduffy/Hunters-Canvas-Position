@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Leeds Hunters Social Media Editor</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script type="text/javascript" src="/js/html2canvas.min.js" async></script>
+  </head>
+  <body>
+    <header>
+      <div class="container u-pad-v-sm u-pad-l-md">
+        <img class="o-logo" src="assets/hunters-logo.png"/>
+        <h1>Hunters - Project</h1>
+      </div>
+    </header>
+    <main class="container">
+      <div class="container__row u-pad-v-md">
+      <div class="col-6 col-12@md">
+          <div id="js-canvas-rugby" class="c-canvas">
+          </div>
+        <!-- <canvas id="js-canvas-rugby" class="c-canvas"></canvas> -->
+      </div>
+      <div class="col-6 col-12@md u-pad-h-md u-pad-v-md">
+        <div id="js-form-progress" class="c-progress" data-canvas-name="match-position">
+          <ul>
+            <li class="active"><span class="c-progress-disc">1</span>Match</li>
+            <li><span class="c-progress-disc">2</span>Forwards</li>
+            <li><span class="c-progress-disc">3</span>Backs</li>
+            <li><span class="c-progress-disc">4</span>Subs</li>
+            <li><span class="c-progress-disc">5</span>Complete</li>
+          </ul>
+        </div>
+        <div class="u-mar-v-lg u-of-hidden">
+          <div class="">
+            <form action="" id="JS-Form" class="o-form js-form" data-progress="1">
+              <label class="o-input--label u-pad-r-sm" for="match[home]">
+                Home Team:
+                <input  class="o-input" type="text" placeholder="Leeds Hunters" id="js-input-home" name="match[home]" data-type="match">
+              </label>
+              <label  class="o-input--label" for="away">
+                Away Team:
+                <input  class="o-input" type="text" placeholder="Newcastle Ravens" id="js-input-away" name="away" data-type="match">
+              </label>
+              <!-- <label class="o-input--label" for="date">
+                Date: (Currently not set up)
+                <input class="o-input" type="date" placeholder="2019-03-20" id="js-input-date" name="date" data-type="match">
+              </label> -->
+              <input class="o-input--submit c-btn" value="Submit This Section" type="submit" />
+            </form>
+            <form action="" class="o-form js-form" id="JS-Form-forwards" data-progress="2">
+              <label for="1" class="o-input--label u-pad-r-sm">
+                Loose-Head Prop:
+                <input class="o-input" type="text" placeholder="Lorem" name="1">
+              </label>
+              <label for="2" class="o-input--label">
+                Hooker:
+                <input type="text" class="o-input" placeholder="2" name="2">
+              </label>
+              <label class="o-input--label u-pad-r-sm" for="3">
+                Tight-head Prop:
+                <input type="text" class="o-input" placeholder="3" name="3">
+              </label>
+              <label class="o-input--label" for="4">
+                Second Row:
+                <input type="text" class="o-input" placeholder="4" name="4">
+              </label>
+              <label class="o-input--label u-pad-r-sm" for="5">
+                Second Row:
+                <input type="text" class="o-input" placeholder="5" name="5">
+              </label>
+              <label class="o-input--label " for="6">
+                Blind Side Flanker:
+                <input type="text" class="o-input" placeholder="6" name="6">
+              </label>
+              <label class="o-input--label u-pad-r-sm" for="7">
+                Open Side Flanker:
+                <input type="text" class="o-input" placeholder="7" name="7">
+              </label>
+              <label class="o-input--label" for="8">
+                Number 8:
+                <input type="text" class="o-input" placeholder="8" name="8">
+              </label>
+              <input type="submit" class="o-input--submit c-btn" value="Submit This Section" />
+            </form>
+            <form action="" class="o-form js-form" id="JS-Form-backs" data-progress="3">
+              <label for="1" class="o-input--label u-pad-r-sm">
+                Scrum Half:
+                <input class="o-input" type="text" placeholder="Lorem" name="1">
+              </label>
+              <label for="2" class="o-input--label">
+                Fly Half:
+                <input type="text" class="o-input" placeholder="2" name="2">
+              </label>
+              <label class="o-input--label u-pad-r-sm" for="3">
+                Left Wing:
+                <input type="text" class="o-input" placeholder="3" name="3">
+              </label>
+              <label class="o-input--label" for="3">
+                Inside Center:
+                <input type="text" class="o-input" placeholder="4" name="4">
+              </label>
+              <label class="o-input--label u-pad-r-sm" for="3">
+                Outside Center:
+                <input type="text" class="o-input" placeholder="5" name="5">
+              </label>
+              <label class="o-input--label " for="3">
+                  Right Wing:
+                <input type="text" class="o-input" placeholder="6" name="6">
+              </label>
+              <label class="o-input--label" for="3">
+                Full Back:
+                <input type="text" class="o-input" placeholder="7" name="7">
+              </label>
+              <input type="submit" class="o-input--submit c-btn" value="Submit This Section" />
+            </form>
+            <form action="" class="o-form js-form" id="JS-Form-Subs" data-progress="4">
+              <label for="1" class="o-input--label u-pad-r-sm">
+                Sub 1:
+                <input class="o-input" type="text" placeholder="Lorem" name="1">
+              </label>
+              <label for="2" class="o-input--label">
+                Sub 2:
+                <input type="text" class="o-input" placeholder="2" name="2">
+              </label>
+              <label class="o-input--label u-pad-r-sm" for="3">
+                Sub 3:
+                <input type="text" class="o-input" placeholder="3" name="3">
+              </label>
+              <label class="o-input--label" for="3">
+                Sub 4:
+                <input type="text" class="o-input" placeholder="4" name="4">
+              </label>
+              <label class="o-input--label u-pad-r-sm" for="3">
+                Sub 5:
+                <input type="text" class="o-input" placeholder="5" name="5">
+              </label>
+              <label class="o-input--label " for="3">
+                Sub 6:
+                <input type="text" class="o-input" placeholder="6" name="6">
+              </label>
+              <label class="o-input--label u-pad-r-sm" for="3">
+                Sub 7:
+                <input type="text" class="o-input" placeholder="7" name="7">
+              </label>
+              <label class="o-input--label" for="3">
+                Sub 8:
+                <input type="text" class="o-input" placeholder="8" name="8">
+              </label>
+              <input type="submit" class="o-input--submit c-btn" value="Submit This Section"/>
+            </form>
+            <div class="container__rows u-mar-v-md" data-progress="5">
+              <a class="c-btn" id="btn-download" download="hunters-pitch.png">Download Now</a>
+            </div>
+         </div>
+        </div> 
+      </div>
+    </div>
+    </main>
+  </body>
+  <script src="/js/scripts.js" ></script>
+</html>

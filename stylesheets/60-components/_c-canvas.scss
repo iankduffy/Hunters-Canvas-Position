@@ -1,3 +1,36 @@
 .c-canvas {
-  
+  border: 1px solid #000; 
+  width: 600px;
+  height: 600px;
+  position: relative; 
+  background: {
+    image: url("/assets/pitch-v2.jpg");
+    size: cover; 
+  }
+
+  * {
+    position: relative;
+    text-decoration: uppercase; 
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+  }
+
+  @include breakpoint-max(md) {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  &__match_announcement {
+    background-image: url("/assets/match-annoucment.png"); 
+    &:before {
+      background-color: $transparent-purple;
+      content: "";
+      width: 100%; 
+      height: 100%;
+      display: block; 
+      position: absolute;
+      z-index: 1;
+    }
+  }
 }

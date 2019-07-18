@@ -12,6 +12,25 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    align-items: flex-start;
+
+    &--v-center {
+      align-items: center;
+    }
+  }
+  
+  &__column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &--center{
+    justify-content: center; 
+  }
+
+  &--end{
+    justify-content: flex-end; 
   }
 }
 
