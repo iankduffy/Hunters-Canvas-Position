@@ -11,8 +11,6 @@
   margin: 0;
   margin-inline-end: 0;
   margin-inline-start: 0;
-  -webkit-transition: 500ms;
-  transition: 500ms;
 }
 
 .u-pad-t-sm {
@@ -269,6 +267,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.container--space-between {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .container--end {
@@ -739,6 +743,7 @@ header {
   display: block;
   position: absolute;
   z-index: 1;
+  top: 0;
 }
 
 .c-progress {
@@ -816,5 +821,11 @@ header {
 
 .u-of-hidden {
   overflow: hidden;
+}
+
+.u-cen-self {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=styles.css.map */
