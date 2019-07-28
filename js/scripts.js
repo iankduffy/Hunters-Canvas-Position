@@ -31,7 +31,7 @@ awayTeam.addEventListener("change", (e) => {
   awayText.textContent = teams[value].name
 })
 
-let teams = {
+let teams = [{
   "leeds-hunters": {
     "name": "Leeds Hunters"
   },
@@ -71,7 +71,7 @@ let teams = {
   "belfast-azlans": {
     "name": "Belfast Azlans"
   }
-}
+}]
 
 let dateField = document.querySelectorAll('[name="date"]')[0]
 let dateText = document.querySelector("[data-date-text]")
@@ -89,3 +89,12 @@ locationField.addEventListener("change", (e) => {
   let value = e.target.value
   locationText.textContent = value
 })
+
+
+let igrClubsInput = document.querySelectorAll('[data-type="match"]')
+
+for(let i = 1; i > igrClubsInput.length; i++) { 
+  teams.forEach((team) => {
+    console.log(team)
+  })
+}

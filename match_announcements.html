@@ -24,12 +24,12 @@
             <div class="c-team-vs container__row container__row--v-center container--space-between u-mar-v-lg u-pad-h-md">
               <div class="sections h2">
                 <div class="col-12 logo" data-home-logo></div>
-                <div data-home-text>Leeds Hunters</div>
+                <div data-home-text>Home Team</div>
               </div>
               <div class="sections u-text-huge">VS</div>
               <div class="sections h2">
                 <div class="col-12 logo" data-away-logo></div>
-                <div data-away-text>Newcastle Ravens</div>
+                <div data-away-text>Away Team</div>
               </div>
             </div>
             <div class="c-team-vs container__row container__row--v-center container--center u-mar-v-md">
@@ -48,25 +48,25 @@
               <label class="o-input--label u-pad-r-sm" for="home">
                 Home Team:
                 <select class="o-input" placeholder="Home Team" id="js-input-home" name="home" data-type="match"> 
+                  <option value="home-team">Home Team</option>
                   <option value="leeds-hunters">Leeds Hunters</option>
                   <option value="newcastle-ravens">Newcastle Raven</option>
-                  <option value="newcastle-ravens">Liverpool Tritons</option>
-                  <option value="newcastle-ravens">Hull Roundheads</option>
                 </select>
               </label>
               <label  class="o-input--label" for="away">
                 Away Team:
                 <select class="o-input" placeholder="Away Team" id="js-input-away" name="away" data-type="match"> 
-                  <option value="leeds-hunters">Leeds Hunters</option>
-                  <option value="newcastle-ravens">Newcastle Raven</option>
+                    <option value="away-team">Away Team</option>
+                    <option value="leeds-hunters">Leeds Hunters</option>
+                    <option value="newcastle-ravens">Newcastle Raven</option>
                 </select>
               </label>
               <label class="o-input--label u-pad-r-sm" for="date">
-                Date: (Needs reformating)
+                Date:
                 <input class="o-input" type="date" placeholder="2019-03-20" id="js-input-date" name="date" data-type="match">
               </label>
               <label class="o-input--label col-12" for="date">
-                Location: (Currently not set up)
+                Location:
                 <input class="o-input" type="text" placeholder="Location" id="js-input-location" name="location" data-type="match">
               </label>
             </form>
