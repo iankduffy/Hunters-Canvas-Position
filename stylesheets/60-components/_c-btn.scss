@@ -10,4 +10,9 @@
   &:hover{
     background: transparentize($primary-color, 0.1)
   }
+
+  &--disabled {
+    background: grey;
+    pointer-events: none;
+  }
 }

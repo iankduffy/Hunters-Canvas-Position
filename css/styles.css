@@ -830,6 +830,11 @@ header {
   background: rgba(103, 72, 128, 0.9);
 }
 
+.c-btn--disabled {
+  background: grey;
+  pointer-events: none;
+}
+
 .c-team-vs .sections {
   text-align: center;
   -webkit-box-flex: 1;
