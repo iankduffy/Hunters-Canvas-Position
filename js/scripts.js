@@ -2,9 +2,9 @@ const canvasDiv = document.getElementById("js-canvas-rugby")
 const create_button = document.querySelector('[data-create]');
 const download_button = document.querySelector('[data-download]');
 
-
 create_button.addEventListener('click', (e) => {
-  download_button.classList.remove("c-btn--disabled");    
+  download_button.classList.remove("c-btn--disabled");
+  download_button.download = `${homeText.textContent}-VS-${awayText.textContent}-${dateText.textContent}`
   html2canvas(canvasDiv).then(canvas => {
     let dataURL = canvas.toDataURL('image/png');
     download_button.href = dataURL;
@@ -31,7 +31,7 @@ awayTeam.addEventListener("change", (e) => {
   awayText.textContent = teams[value].name
 })
 
-let teams = [{
+let teams = {
   "leeds-hunters": {
     "name": "Leeds Hunters"
   },
@@ -71,14 +71,14 @@ let teams = [{
   "belfast-azlans": {
     "name": "Belfast Azlans"
   }
-}]
+}
 
 let dateField = document.querySelectorAll('[name="date"]')[0]
 let dateText = document.querySelector("[data-date-text]")
 
 dateField.addEventListener("change", (e) => {
   let value = e.target.value
-  value = value.split("-").reverse().join("/") 
+  value = value.split("-").reverse().join(" / ") 
   dateText.textContent = value
 })
 
@@ -90,11 +90,26 @@ locationField.addEventListener("change", (e) => {
   locationText.textContent = value
 })
 
-
-let igrClubsInput = document.querySelectorAll('[data-type="match"]')
-
-for(let i = 1; i > igrClubsInput.length; i++) { 
-  teams.forEach((team) => {
-    console.log(team)
-  })
+let setUpDropDown = (input) => {
+  for(let team in teams) {
+    let option = document.createElement("option")
+    option.textContent = teams[team].name
+    option.value = team
+    input.appendChild(option)
+  }
 }
+
+setUpDropDown(homeTeam)
+setUpDropDown(awayTeam)
+
+// let backgroundImageInput = document.querySelector('[data-type="background-image"]')
+
+// backgroundImageInput.addEventListener('change', (e) => {
+//   console.log(backgroundImageInput.files[0])
+//   let file = backgroundImageInput.files[0]
+//   let reader = new FileReader();
+//   value = reader.readAsDataURL(file);
+//   console.log(value)
+//   canvasDiv.style.backgroundImage = `url(${value})`
+// })
+

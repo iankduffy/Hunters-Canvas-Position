@@ -835,6 +835,11 @@ header {
   pointer-events: none;
 }
 
+.c-team-vs {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
 .c-team-vs .sections {
   text-align: center;
   -webkit-box-flex: 1;

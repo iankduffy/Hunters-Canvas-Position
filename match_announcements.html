@@ -40,7 +40,6 @@
               </div>
           </div>
         </div>
-        <!-- <canvas id="js-canvas-rugby" class="c-canvas"></canvas> -->
       <div class="col-6 col-12@md u-pad-h-md u-pad-v-md">
         <div class="u-mar-v-lg u-of-hidden">
           <div class="">
@@ -48,17 +47,13 @@
               <label class="o-input--label u-pad-r-sm" for="home">
                 Home Team:
                 <select class="o-input" placeholder="Home Team" id="js-input-home" name="home" data-type="match"> 
-                  <option value="home-team">Home Team</option>
-                  <option value="leeds-hunters">Leeds Hunters</option>
-                  <option value="newcastle-ravens">Newcastle Raven</option>
+                  <option value="home-team">Home Team</option>  
                 </select>
               </label>
               <label  class="o-input--label" for="away">
                 Away Team:
                 <select class="o-input" placeholder="Away Team" id="js-input-away" name="away" data-type="match"> 
-                    <option value="away-team">Away Team</option>
-                    <option value="leeds-hunters">Leeds Hunters</option>
-                    <option value="newcastle-ravens">Newcastle Raven</option>
+                  <option value="away-team">Away Team</option>
                 </select>
               </label>
               <label class="o-input--label u-pad-r-sm" for="date">
@@ -69,10 +64,15 @@
                 Location:
                 <input class="o-input" type="text" placeholder="Location" id="js-input-location" name="location" data-type="match">
               </label>
+              <label class="o-input--label" for="image">
+                Change Background Image: (WIP)
+                <input class="o-input" type="file" accept="image/png, image/jpeg" name="image" data-type="background-image">
+              </label>
+
             </form>
             <div class="container__rows u-mar-v-md" data-progress="5">
               <a class="c-btn u-mar-v-md" data-create>Create Image</a>
-              <a class="c-btn c-btn--disabled u-mar-v-md" data-download download="">Download Now</a>
+              <a class="c-btn c-btn--disabled u-mar-v-md" data-download download="Leeds-hunters-match">Download Now</a>
             </div>
          </div>
         </div> 
