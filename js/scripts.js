@@ -113,3 +113,7 @@ setUpDropDown(awayTeam)
 //   canvasDiv.style.backgroundImage = `url(${value})`
 // })
 
+document.addEventListener('submit', (e) => {
+  e.preventDefault()
+  console.log("defaulted")
+})
