@@ -3,4 +3,9 @@
   min-height: 8vh; 
   display: inline;
   float: left; 
+
+  &--large {
+    width: 50%;
+    align-self: center;
+  }
 }
