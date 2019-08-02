@@ -7,11 +7,16 @@
 
   .logo {
     height: 200px;
-    width: 100%; 
+    width: 100%;
+    flex: 1 0 auto;  
     background: {
       size: contain; 
       position: center;
       repeat: no-repeat; 
     }
+  }
+
+  &-text {
+    flex: 0 1 auto;
   }
 }
