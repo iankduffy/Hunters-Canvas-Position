@@ -6,8 +6,10 @@ create_button.addEventListener('click', (e) => {
   download_button.classList.remove("c-btn--disabled");
   download_button.download = `${homeText.textContent}-VS-${awayText.textContent}-${dateText.textContent}`
   html2canvas(canvasDiv).then(canvas => {
-    let dataURL = canvas.toDataURL('image/png');
-    download_button.href = dataURL;
+    canvas.toBlob((blob) => {
+      download_button.href = URL.createObjectURL(blob);;
+    }, 'image/png')
+    
   }) 
 })
 
