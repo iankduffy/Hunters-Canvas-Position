@@ -1951,8 +1951,7 @@ header {
 
 .c-canvas * {
   position: relative;
-  -webkit-text-decoration: uppercase;
-          text-decoration: uppercase;
+  text-transform: uppercase;
   text-align: center;
   color: #fff;
   z-index: 2;
