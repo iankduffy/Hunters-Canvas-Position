@@ -1958,6 +1958,12 @@ header {
 }
 
 @media (max-width: 738px) {
+  .c-canvas * {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 738px) {
   .c-canvas {
     width: 100vw;
     height: 100vw;
@@ -2097,5 +2103,11 @@ header {
 
 .u-text-huge {
   font-size: 6rem;
+}
+
+@media (max-width: 738px) {
+  .u-text-huge {
+    font-size: 4rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

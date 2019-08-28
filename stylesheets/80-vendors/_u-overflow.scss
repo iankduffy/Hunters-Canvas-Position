@@ -8,4 +8,7 @@
 
 .u-text-huge {
   font-size: 6rem;
+  @include breakpoint-max(md) {
+    font-size: 4rem;
+  }
 }
