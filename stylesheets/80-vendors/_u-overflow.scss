@@ -2,6 +2,10 @@
   overflow: hidden;
 }
 
+.u-hid {
+  display: none;
+}
+
 .u-cen-self {
   align-self: center;
 }
@@ -11,4 +15,8 @@
   @include breakpoint-max(md) {
     font-size: 4rem;
   }
+}
+
+.u-mar-cen {
+  margin: 0 auto;
 }

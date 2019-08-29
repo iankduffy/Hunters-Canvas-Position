@@ -6,6 +6,12 @@
   background: {
     image: url("/assets/pitch-v2.jpg");
     size: cover; 
+    position: center; 
+  }
+
+  &-fb {
+    width: 1200px;
+    height: 628px;
   }
 
   * {

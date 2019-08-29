@@ -1947,6 +1947,12 @@ header {
   position: relative;
   background-image: url("/assets/pitch-v2.jpg");
   background-size: cover;
+  background-position: center;
+}
+
+.c-canvas-fb {
+  width: 1200px;
+  height: 628px;
 }
 
 .c-canvas * {
@@ -2095,6 +2101,10 @@ header {
   overflow: hidden;
 }
 
+.u-hid {
+  display: none;
+}
+
 .u-cen-self {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -2109,5 +2119,9 @@ header {
   .u-text-huge {
     font-size: 4rem;
   }
+}
+
+.u-mar-cen {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=styles.css.map */

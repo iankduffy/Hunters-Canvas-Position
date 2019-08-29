@@ -20,6 +20,7 @@
     <main class="container">
       <div class="container__row  u-pad-v-md">
         <div class="col-6 col-12@md">
+          <h3>Main Preview:</h3>
           <div id="js-canvas-rugby" class="c-canvas c-canvas__match_announcement container__column container--end u-pad-v-sm@md u-pad-v-lg u-pad-h-xs@md u-pad-h-sm" data-canvas-name="match_announcement">
             <div class="c-team-vs container__row container__row--v-center container--space-between u-mar-v-sm u-mar-v-lg@md">
               <div class="sections h2">
@@ -38,7 +39,7 @@
             <div class="c-team-vs container__row container__row--v-center container--center u-mar-v-xs@md">
               <div class="sections h4" data-location-text>LOCATION</div>
             </div>
-            <div class="sections h3 u-mar-v-md u-mar-v-xs@md">#SHOWUSYOURTACKLE</div>
+            <div class="sections h3 u-mar-t-md u-mar-t-xs@md">#SHOWUSYOURTACKLE</div>
           </div>
         </div>
       <div class="col-6 col-12@md u-pad-h-md u-pad-v-md">
@@ -73,11 +74,35 @@
             </form>
             <div class="container__rows u-mar-v-md" data-progress="5">
               <a class="c-btn u-mar-v-md" data-create>Create Image</a>
-              <a class="c-btn c-btn--disabled u-mar-v-md" data-download download="Leeds-hunters-match">Download Now</a>
+              <a class="c-btn c-btn--disabled u-mar-v-md" data-download download="Leeds-hunters-match">Download Main Now</a>
+              <a class="c-btn c-btn--disabled u-mar-v-md" data-download-fb download="Leeds-hunters-match">Download FB Now</a>
             </div>
          </div>
         </div> 
       </div>
+      </div>
+      <h3>Facebook Preview:</h3>
+      <div id="js-canvas-rugby-fb" class="c-canvas c-canvas-fb c-canvas__match_announcement container__column container--center container--end u-pad-v-sm@md u-pad-v-lg u-pad-h-xs@md u-pad-h-sm" data-canvas-name="match_announcement">
+        <div class="col-8 u-mar-cen" data-canvas-child="fb">
+          <div class="c-team-vs container__row container__row--v-center container--space-between u-mar-v-sm u-mar-v-lg@md">
+            <div class="sections h2">
+              <div class="col-12 logo" data-home-logo></div>
+              <div data-home-text>Home Team</div>
+            </div>
+            <div class="sections u-text-huge c-team-vs-text">VS</div>
+            <div class="sections h2">
+              <div class="col-12 logo" data-away-logo></div>
+              <div data-away-text>Away Team</div>
+            </div>
+          </div>
+          <div class="c-team-vs container__row container__row--v-center container--center u-mar-v-xs@md u-mar-v-md">
+            <div class="sections h3" data-date-text>DATE</div>
+          </div>
+          <div class="c-team-vs container__row container__row--v-center container--center u-mar-v-xs@md">
+            <div class="sections h4" data-location-text>LOCATION</div>
+          </div>
+          <div class="sections h3 u-mar-t-md u-mar-t-xs@md">#SHOWUSYOURTACKLE</div>
+        </div>
       </div>
     </main>
   </body>

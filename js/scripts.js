@@ -1,16 +1,26 @@
 const canvasDiv = document.getElementById("js-canvas-rugby")
+const canvasDivFB = document.querySelector('[data-canvas-child="fb"]')
 const create_button = document.querySelector('[data-create]');
 const download_button = document.querySelector('[data-download]');
+const download_button_fb = document.querySelector('[data-download-fb]');
+
 
 create_button.addEventListener('click', (e) => {
   download_button.classList.remove("c-btn--disabled");
+  download_button_fb.classList.remove("c-btn--disabled");
   download_button.download = `${homeText.textContent}-VS-${awayText.textContent}-${dateText.textContent}`
+  download_button_fb.download = `${homeText.textContent}-VS-${awayText.textContent}-${dateText.textContent}`
+  canvasDivFB.innerHTML = canvasDiv.innerHTML
   html2canvas(canvasDiv).then(canvas => {
     canvas.toBlob((blob) => {
-      download_button.href = URL.createObjectURL(blob);;
-    }, 'image/png')
-    
-  }) 
+      download_button.href = URL.createObjectURL(blob)
+    }, 'image/png', 1)
+  })
+  html2canvas(canvasDivFB.parentElement).then(canvas => {
+    canvas.toBlob((blob) => {
+      download_button_fb.href = URL.createObjectURL(blob)
+    }, 'image/png', 1)
+  })
 })
 
 let homeTeam = document.querySelectorAll('[name="home"]')[0]
@@ -39,7 +49,10 @@ let teams = {
   },
   "newcastle-ravens": {
     "name": "Newcastle Ravens"
-  }, 
+  },
+  "liverpool-tritons": {
+    "name": "Liverpool Tritons"
+  },
   "glasgow-alphas": {
     "name": "Glasgow Alphas"
   }, 
