@@ -1,11 +1,14 @@
 const canvasDiv = document.getElementById("js-canvas-rugby")
 const canvasDivFB = document.querySelector('[data-canvas-child="fb"]')
+const canvasDivParent = document.querySelector('.js-canvas-parent')
+
 const create_button = document.querySelector('[data-create]');
 const download_button = document.querySelector('[data-download]');
 const download_button_fb = document.querySelector('[data-download-fb]');
 
 
 create_button.addEventListener('click', (e) => {
+  canvasDivParent.classList.remove("u-hid")
   download_button.classList.remove("c-btn--disabled");
   download_button_fb.classList.remove("c-btn--disabled");
   download_button.download = `${homeText.textContent}-VS-${awayText.textContent}-${dateText.textContent}`
@@ -131,4 +134,16 @@ setUpDropDown(awayTeam)
 document.addEventListener('submit', (e) => {
   e.preventDefault()
   console.log("defaulted")
+})
+
+let bottom_text = document.querySelector('[data-text-change]')
+let viaduct_sponsor = document.querySelector('[data-type="sponsor"]')
+let sponsor_logo = document.querySelector('[data-sponsor]')
+
+
+viaduct_sponsor.addEventListener("change", () => {
+  bottom_text.classList.toggle("u-force-left")
+  sponsor_logo.style.display = "block"
+
+
 })

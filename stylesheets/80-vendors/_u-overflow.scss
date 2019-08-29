@@ -20,3 +20,20 @@
 .u-mar-cen {
   margin: 0 auto;
 }
+
+.u-mar-zero {
+  margin: 0;
+}
+
+.u-force-left * {
+  text-align: left !important; 
+  align-content: flex-start !important;
+  max-width: 100% !important;
+  flex: 0 1 60% !important;
+}
+
+.o-btm-logo{
+  width: 30%;
+  flex: 1 1 30%; 
+  height: 100%; 
+}

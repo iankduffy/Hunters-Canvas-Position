@@ -55,6 +55,12 @@
   height: 100%;
 }
 
+.container--start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .container--center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1955,6 +1961,16 @@ header {
   height: 628px;
 }
 
+.c-canvas-gram {
+  width: 1080px;
+  height: 1080px;
+  margin: 0 auto;
+}
+
+.c-canvas-gram * {
+  font-size: 2rem;
+}
+
 .c-canvas * {
   position: relative;
   text-transform: uppercase;
@@ -2123,5 +2139,27 @@ header {
 
 .u-mar-cen {
   margin: 0 auto;
+}
+
+.u-mar-zero {
+  margin: 0;
+}
+
+.u-force-left * {
+  text-align: left !important;
+  -ms-flex-line-pack: start !important;
+      align-content: flex-start !important;
+  max-width: 100% !important;
+  -webkit-box-flex: 0 !important;
+      -ms-flex: 0 1 60% !important;
+          flex: 0 1 60% !important;
+}
+
+.o-btm-logo {
+  width: 30%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  height: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
