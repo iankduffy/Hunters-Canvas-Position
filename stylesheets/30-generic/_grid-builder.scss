@@ -40,6 +40,15 @@
   &--end{
     justify-content: flex-end; 
   }
+
+  &--flex{
+    display: flex;
+    align-items: center;
+
+    *{
+      flex: 1 1 50%;
+    }
+  }
 }
 
 @for $i from 1 through $grid-cols {

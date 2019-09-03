@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Leeds Hunters Match Announcement</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script type="text/javascript" src="/js/html2canvas.min.js" async></script>
+  </head>
+  <body>
+    <header>
+      <div class="container u-pad-v-sm u-pad-l-md">
+        <img class="o-logo" src="assets/hunters-logo.png"/>
+        <h1>Hunters Custom Text</h1>
+      </div>
+    </header>
+    <main class="container">
+      <div class="container__row  u-pad-v-md">
+        <div class="col-6 col-12@md">
+          <h3>Main Preview:</h3>
+          <div id="js-canvas-rugby" class="c-canvas c-canvas__match_announcement container__column container--center u-pad-v-sm@md u-pad-v-lg u-pad-h-xs@md u-pad-h-md" data-canvas-name="match_announcement">
+            <div class="js-header container--flex" data-header-container>
+              <div class="u-mar-h-sm" data-logo style="flex: 0 0 25%;">Temp</div>
+              <div class="u-text-cent">
+                <h2 data-pre-header>Leeds Hunters</h2>
+                <h2 data-header>Custom Title</h2>
+              </div>
+            </div>
+            <div class="js-para u-pad-v-lg" data-para-container>
+              <p>Pariatur nulla ullamco fugiat aute sit eiusmod cupidatat est nisi non aliqua occaecat pariatur. Reprehenderit elit occaecat nulla irure velit sint. Dolor irure voluptate incididunt ad incididunt eiusmod ad laborum ut fugiat magna labore minim. Non ut do incididunt laborum amet quis amet adipisicing proident.</p>
+            </div>
+            <div class="js-para u-pad-v-lg" data-footer-container>
+              <p class="h4">preheader</p>
+              <p class="h2">Header</p>
+            </div>
+          </div>
+        </div>
+      <div class="col-6 col-12@md u-pad-h-md u-pad-v-md">
+        <div class="u-mar-v-lg u-of-hidden">
+          <div class="">
+            <form  id="JS-Form" class="o-form js-form">
+              <label class="o-input--label u-pad-r-sm" for="pre_header">
+                Pre Header
+                <input class="o-input" type="text" placeholder="Leeds Hunters" name="pre_header" data-type="pre_header">
+              </label>
+              <label  class="o-input--label" for="main_header">
+                Main Title
+                <input class="o-input" type="text" placeholder="Custom Title" name="main_header" data-type="main_header">
+              </label>
+              <label  class="o-input--label" for="logo_position">
+                Logo Position
+                <select class="o-input" placeholder="Left" name="logo_position" data-type="logo_position"> 
+                  <option value="flex-left">Left</option>
+                  <option value="flex-right">Right</option>
+                  <option value="above">Above</option>
+                  <option value="hidden">None</option>
+                </select>
+              </label>
+              <div class="col-12">
+                <label class="o-input--label col-12" for="paragraph" data-behaviour="paragraph-form">
+                  Paragraph:
+                  <input class="o-input" type="text" placeholder="text goes here" name="paragraph" data-para="1" data-behaviour="p-form">
+                </label>
+              </div>
+              <button class="c-btn u-mar-v-md col-12" data-add-paragraph>Add Paragraph</div>
+              <label class="o-input--label col-12" for="pre_footer">
+                Pre Footer:
+                <input class="o-input" type="text" placeholder="email us at...." name="pre_footer" data-type="pre_footer">
+              </label>
+              <label class="o-input--label col-12" for="footer">
+                Footer:
+                <input class="o-input" type="text" placeholder="email address" name="footer" data-type="footer">
+              </label>
+            </form>
+            <div class="container__rows u-mar-v-md" data-progress="5">
+              <a class="c-btn u-mar-v-md" data-create>Create Image</a>
+              <a class="c-btn c-btn--disabled u-mar-v-md" data-download download="Leeds-hunters-match">Download Main Now</a>
+            </div>
+         </div>
+        </div> 
+      </div>
+    </main>
+  </body>
+  <script src="/js/custom_template_scripts.js" ></script>
+</html>

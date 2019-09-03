@@ -79,6 +79,21 @@
           justify-content: flex-end;
 }
 
+.container--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container--flex * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
 .col-1 {
   width: 8.33333%;
 }
@@ -1973,7 +1988,6 @@ header {
 
 .c-canvas * {
   position: relative;
-  text-transform: uppercase;
   text-align: center;
   color: #fff;
   z-index: 2;
@@ -2086,6 +2100,20 @@ header {
   pointer-events: none;
 }
 
+.c-link {
+  border: 1px solid #451E64;
+  text-decoration: none;
+  width: 500px;
+  text-align: center;
+}
+
+.c-link_image {
+  height: 250px;
+  background-color: #451E64;
+  background-size: cover;
+  background-position: center;
+}
+
 .c-team-vs {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
@@ -2161,5 +2189,13 @@ header {
       -ms-flex: 1 1 30%;
           flex: 1 1 30%;
   height: 100%;
+}
+
+.u-text-up {
+  text-transform: uppercase;
+}
+
+.u-text-cent {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

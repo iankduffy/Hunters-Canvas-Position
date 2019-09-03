@@ -1,0 +1,15 @@
+.c-link {
+  border: 1px solid $primary-color;
+  text-decoration: none;
+  width: 500px; 
+  text-align: center; 
+
+  &_image {
+    height: 250px;
+    background: {
+      color: $primary-color;
+      size: cover;
+      position: center;
+    }
+  }
+}
