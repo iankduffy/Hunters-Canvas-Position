@@ -104,14 +104,19 @@ const addParaToCanvas = (element, pForm) => {
 addParaToCanvas(firstPara)
 
 // Form
-let preFooter = document.querySelector('[data-type="footer"]')
+let preFooter = document.querySelector('[data-type="pre_footer"]')
 let footer = document.querySelector('[data-type="footer"]')
 
 // Elements
-let preFooterEle = document.querySelector('[data-type="footer"]')
-let footerEle = document.querySelector('[data-type="footer"]')
+let preFooterEle = document.querySelector('[data-pre-footer]')
+let footerEle = document.querySelector('[data-footer]')
 
 preFooter.addEventListener("change", (e) => {
   let value = e.target.value
-  headerEle.textContent = value
+  preFooterEle.textContent = value
+})
+
+footer.addEventListener("change", (e) => {
+  let value = e.target.value
+  footerEle.textContent = value
 })
