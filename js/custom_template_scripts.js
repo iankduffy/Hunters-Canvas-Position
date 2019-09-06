@@ -23,9 +23,6 @@ let preHeader = document.querySelector('[data-type="pre_header"]')
 let header = document.querySelector('[data-type="main_header"]')
 let logoPosition = document.querySelector('[data-type="logo_position"]')
 
-let preFooter = document.querySelector('[data-type="footer"]')
-let footer = document.querySelector('[data-type="footer"]')
-
 let addParagraphBtn = document.querySelector('[data-add-paragraph]')
 
 // Elements in Canvas
@@ -33,6 +30,7 @@ let preHeaderEle = document.querySelector('[data-pre-header]')
 let headerEle = document.querySelector('[data-header]')
 let headerContainer = document.querySelector('[data-header-container]')
 let logoEle = document.querySelector('[data-logo]')
+let logoEleImg = document.querySelector('[data-logo] img')
 
 preHeader.addEventListener("change", (e) => {
   let value = e.target.value
@@ -51,14 +49,17 @@ logoPosition.addEventListener("change", (e) => {
     case 'above': 
       headerContainer.style.flexDirection = "column"
       headerContainer.style.alignItems = "center"
+      logoEleImg.classList.remove("o-logo--large")
       break;
     case 'flex-left': 
       headerContainer.style.flexDirection = "row"
       headerContainer.style.alignItems = "center"
+      logoEle.firstChild.classList.add("o-logo--large")
       break;
     case 'flex-right': 
       headerContainer.style.flexDirection = "row-reverse"
       headerContainer.style.alignItems = "center"
+      logoEle.firstChild.classList.add("o-logo--large")
       break;
     case 'hidden': 
       logoEle.style.display = "none"
@@ -102,3 +103,15 @@ const addParaToCanvas = (element, pForm) => {
 
 addParaToCanvas(firstPara)
 
+// Form
+let preFooter = document.querySelector('[data-type="footer"]')
+let footer = document.querySelector('[data-type="footer"]')
+
+// Elements
+let preFooterEle = document.querySelector('[data-type="footer"]')
+let footerEle = document.querySelector('[data-type="footer"]')
+
+preFooter.addEventListener("change", (e) => {
+  let value = e.target.value
+  headerEle.textContent = value
+})
