@@ -141,9 +141,20 @@ let viaduct_sponsor = document.querySelector('[data-type="sponsor"]')
 let sponsor_logo = document.querySelector('[data-sponsor]')
 
 
-viaduct_sponsor.addEventListener("change", () => {
-  bottom_text.classList.toggle("u-force-left")
-  sponsor_logo.style.display = "block"
+// viaduct_sponsor.addEventListener("change", () => {
+//   bottom_text.classList.toggle("u-force-left")
+//   sponsor_logo.style.display = "block"
+// })
 
+let backgroundImage = document.querySelector('[data-type="background-image"]')
 
+backgroundImage.addEventListener("change", (e) => {
+  let value = e.target.files[0]
+  let reader = new FileReader();
+
+  reader.onload = () => {
+    canvasDiv.style.backgroundImage = `url( ${reader.result} )`;
+  }
+
+  reader.readAsDataURL(value);
 })

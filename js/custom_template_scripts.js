@@ -122,22 +122,13 @@ footer.addEventListener("change", (e) => {
 
 let backgroundImage = document.querySelector('[data-type="background-image"]')
 
-// canvasDiv
-
 backgroundImage.addEventListener("change", (e) => {
   let value = e.target.files[0]
   let reader = new FileReader();
 
-  console.log(value)
-
   reader.onload = () => {
-    console.log(reader.result)
     canvasDiv.style.backgroundImage = `url( ${reader.result} )`;
   }
 
   reader.readAsDataURL(value);
-
-
-  // let value = e.target.value
-  // canvasDiv.backgroundImage = `url( ${URL.createObjectURL(value)} )`;
 })
