@@ -45,3 +45,10 @@
 .u-text-cent {
   text-align: center; 
 }
+
+.u-text-left {
+  text-align: left;
+  &-parent  * {
+    text-align: left;
+  }
+}

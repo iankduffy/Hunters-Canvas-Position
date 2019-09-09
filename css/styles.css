@@ -1904,7 +1904,7 @@ header {
 
 .o-logo {
   width: 120px;
-  min-height: 8vh;
+  min-height: 5vh;
   display: inline;
   float: left;
 }
@@ -2197,5 +2197,13 @@ header {
 
 .u-text-cent {
   text-align: center;
+}
+
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-left-parent * {
+  text-align: left;
 }
 /*# sourceMappingURL=styles.css.map */
