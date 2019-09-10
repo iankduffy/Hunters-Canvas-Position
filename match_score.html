@@ -19,48 +19,30 @@
     </header>
     <main class="container">
       <div class="container__row  u-pad-v-md">
-        <div class="col-6 col-12@md">
+        <div class="col-6 col-12@lg">
           <h3>Main Preview:</h3>
           <div id="js-canvas-rugby" class="c-canvas c-canvas__match_announcement container__column container--end u-pad-v-sm@md u-pad-v-lg u-pad-h-xs@md u-pad-h-sm u-text-up" data-canvas-name="match_announcement">
             <div class="c-team-vs container__row container__row--v-center container--space-between u-mar-v-sm u-mar-v-lg@md">
               <div class="sections h2">
                 <div class="col-12 logo" data-home-logo></div>
                 <div data-home-text>Home Team</div>
+                <div class="col-12 u-mar-v-lg u-text-huge" data-home-score>00</div>
               </div>
               <div class="sections u-text-huge c-team-vs-text">VS</div>
               <div class="sections h2">
                 <div class="col-12 logo" data-away-logo></div>
                 <div data-away-text>Away Team</div>
+                <div class="col-12 u-mar-v-lg u-text-huge" data-away-score>00</div>
               </div>
             </div>
             <div class="o-btm u-pad-h-sm container u-mar-zero" data-text-change>
-              <div class="o-btm-text">
-                <div class="c-team-vs container__row container__row--v-center container--center u-mar-v-xs@md u-mar-v-md">
-                  <div class="sections h3" data-date-text>DATE</div>
-                </div>
-                <div class="c-team-vs container__row container__row--v-center container--center u-mar-v-xs@md">
-                  <div class="h4 col-9" data-location-text>LOCATION</div>
-                </div>
-                <div class="sections h3 u-mar-t-md u-mar-t-xs@md">#SHOWUSYOURTACKLE</div>
-              </div>
+              <div class="sections h3 u-mar-t-md u-mar-t-xs@md">#SHOWUSYOURTACKLE</div>
+            </div>
               <!-- <div class="o-btm-logo" data-sponsor> -->
             <!-- </div> -->
-            </div>
-
-            <!-- <div class="u-pos-abs">
-                <svg width="100%" height="100%" viewBox="0 0 1449 995" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                  <g transform="matrix(0.684377,-0.221105,0.366748,1.13518,-119.362,109.393)">
-                      <path d="M722.842,117.274L1096.86,460.246L111.564,460.246L722.842,117.274Z" style="fill:rgb(88,64,138);fill-opacity:0.7;"/>
-                  </g>
-                  <g transform="matrix(-1.15813,0.188093,-0.253595,-1.56143,1607.62,970.998)">
-                      <path d="M476.875,117.274L1096.86,460.246L111.564,460.246L476.875,117.274Z" style="fill:rgb(88,64,138);fill-opacity:0.75;"/>
-                  </g>
-              </svg>
-            </div> -->
-
           </div>
         </div>
-      <div class="col-6 col-12@md u-pad-h-md u-pad-v-md">
+      <div class="col-6 col-12@lg u-pad-h-md u-pad-v-md">
         <div class="u-mar-v-lg u-of-hidden">
           <div class="">
             <form action="" id="JS-Form" class="o-form js-form">
@@ -76,6 +58,14 @@
                   <option value="away-team">Away Team</option>
                 </select>
               </label>
+              <label class="o-input--label u-pad-r-sm" for="home_score">
+                  Home Team Score: 
+                  <input class="o-input" type="text" placeholder="00" id="js-input-location" name="home_score" data-type="match">
+                </label>
+                <label  class="o-input--label" for="away_score">
+                  Away Team Score:
+                  <input class="o-input" type="text" placeholder="00" id="js-input-location" name="away_score" data-type="match">                  
+                </label>
               <label class="o-input--label u-pad-r-sm" for="date">
                 Date:
                 <input class="o-input" type="date" placeholder="2019-03-20" id="js-input-date" name="date" data-type="match">
@@ -84,14 +74,6 @@
                 Location:
                 <input class="o-input" type="text" placeholder="Location" id="js-input-location" name="location" data-type="match">
               </label>
-              <!-- <label class="o-input--label" for="image">
-                Change Background Image: (WIP)
-                <input class="o-input" type="file" accept="image/png, image/jpeg" name="image" data-type="background-image">
-              </label> -->
-              <!-- <label class="o-input--label col-12" for="date">
-                Add Viaduct Logo:
-                <input class="o-input" type="checkbox" name="add_sponsor" data-type="sponsor">
-              </label> -->
               <label class="o-input--label col-12" for="footer">
                 Image Upload:
                 <input class="o-input" type="file" accept="image/png, image/jpeg" name="background-image" data-type="background-image">

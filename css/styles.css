@@ -1966,7 +1966,7 @@ header {
   width: 600px;
   height: 600px;
   position: relative;
-  background-image: url("/assets/pitch-v2.jpg");
+  background-image: url("/assets/Dublin.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -2007,7 +2007,7 @@ header {
 }
 
 .c-canvas__match_announcement {
-  background-image: url("/assets/match-annoucment.png");
+  background-image: url("/assets/Dublin.jpg");
 }
 
 .c-canvas__match_announcement:before {
@@ -2205,5 +2205,9 @@ header {
 
 .u-text-left-parent * {
   text-align: left;
+}
+
+.u-pos-abs {
+  position: absolute;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -4,7 +4,7 @@
   height: 600px;
   position: relative; 
   background: {
-    image: url("/assets/pitch-v2.jpg");
+    image: url("/assets/Dublin.jpg");
     size: cover; 
     position: center; 
   }
@@ -42,7 +42,7 @@
   }
 
   &__match_announcement {
-    background-image: url("/assets/match-annoucment.png"); 
+    background-image: url("/assets/Dublin.jpg"); 
     &:before {
       background-color: $transparent-purple;
       content: "";
