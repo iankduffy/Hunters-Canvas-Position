@@ -21,49 +21,33 @@
       <div class="container__row  u-pad-v-md">
         <div class="col-6 col-12@lg">
           <h3>Main Preview:</h3>
-          <div id="js-canvas-rugby" class="c-canvas c-canvas__match_announcement container__column container--center u-pad-v-sm@md u-pad-v-lg u-pad-h-xs@md u-pad-h-md" data-canvas-name="match_announcement">
-            <div class="js-header container--flex" data-header-container>
-              <div class="u-mar-h-sm" data-logo style="flex: 0 0 30%; text-align: center;justify-content: center;"><img class="o-logo o-logo--large" src="assets/hunters-logo.png"/></div>
-              <div class="u-text-cent">
-                <h2 class="h3" data-pre-header>Leeds Hunters</h2>
-                <h2 data-header>Custom Title</h2>
+          <div id="js-canvas-rugby" class="c-canvas c-canvas__match_announcement container__column" data-canvas-name="match_announcement">
+            <div class="c-canvas-text-container u-pad-v-sm@md u-pad-v-md u-pad-h-xs@md u-pad-h-md">
+              <div class="u-text-left-parent">
+                <h1 class="col-12" data-pre-header>Meet The Hunters</h2>
+                <div class="u-dis-flex">
+                  <h2 data-header>Name</h2>
+                  <p class="h2 u-mar-l-lg" data-header>Rugby Position</h2>
+                </div>
+              </div>
+              <div class="js-para u-text-left-parent" data-para-container>
+                <p>Pariatur nulla ullamco fugiat aute sit eiusmod cupidatat est nisi non aliqua occaecat pariatur. Reprehenderit elit occaecat nulla irure velit sint. Dolor irure voluptate incididunt ad incididunt eiusmod ad laborum ut fugiat magna labore minim. Non ut do incididunt laborum amet quis amet adipisicing proident.</p>
               </div>
             </div>
-            <div class="js-para u-pad-v-lg u-text-left-parent" data-para-container>
-              <p>Pariatur nulla ullamco fugiat aute sit eiusmod cupidatat est nisi non aliqua occaecat pariatur. Reprehenderit elit occaecat nulla irure velit sint. Dolor irure voluptate incididunt ad incididunt eiusmod ad laborum ut fugiat magna labore minim. Non ut do incididunt laborum amet quis amet adipisicing proident.</p>
-            </div>
-            <div class="js-para u-pad-v-lg" data-footer-container>
-              <p class="h4" data-pre-footer>PreFooter</p>
-              <p class="h2" data-footer>Footer</p>
-            </div> 
           </div>
         </div>
       <div class="col-6 col-12@lg u-pad-h-md u-pad-v-md">
         <div class="u-mar-v-lg u-of-hidden">
           <div class="">
             <form  id="JS-Form" class="o-form js-form">
-              <div class="o-input--section">
-                <label class="o-input--label u-pad-r-sm" for="pre_header">
-                  Pre Header
-                  <input class="o-input" type="text" placeholder="Leeds Hunters" name="pre_header" data-type="pre_header">
-                  <label  class="o-input--label" for="prehead-size">
-                    Text Size
-                    <select class="o-input" placeholder="Medium" name="prehead-size" data-type="prehead-size"> 
-                      <option value="u-font-xsm">Extra Small</option>
-                      <option value="u-font-sm">Small</option>
-                      <option value="u-font-md">Medium</option>
-                      <option value="u-font-lg">Large</option>
-                      <option value="u-font-elg">Extra Large</option>
-                    </select>
-                  </label>
-                </label>
-              </div>
-              <div class="o-input--section">
-                <label  class="o-input--label" for="main_header">
-                  Main Title
-                  <input class="o-input" type="text" placeholder="Custom Title" name="main_header" data-type="main_header">
-                </label>
-              </div>
+              <label class="o-input--label u-pad-r-sm" for="pre_header">
+                Pre Header
+                <input class="o-input" type="text" placeholder="Leeds Hunters" name="pre_header" data-type="pre_header">
+              </label>
+              <label  class="o-input--label" for="main_header">
+                Main Title
+                <input class="o-input" type="text" placeholder="Custom Title" name="main_header" data-type="main_header">
+              </label>
               <label  class="o-input--label" for="logo_position">
                 Logo Position
                 <select class="o-input" placeholder="Left" name="logo_position" data-type="logo_position"> 

@@ -1953,6 +1953,16 @@ header {
           flex: 1 1 50%;
 }
 
+.o-input--section {
+  width: 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+  margin: 5px;
+  padding: 5px;
+  border: 1px #451E64 solid;
+}
+
 .o-input--submit {
   width: 100%;
   margin: 2.5% 0;
@@ -2020,6 +2030,10 @@ header {
   z-index: 1;
   top: 0;
   left: 0;
+}
+
+.c-canvas-text-container {
+  background-color: #451E64;
 }
 
 .c-progress {
@@ -2209,5 +2223,11 @@ header {
 
 .u-pos-abs {
   position: absolute;
+}
+
+.u-dis-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=styles.css.map */

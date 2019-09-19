@@ -23,6 +23,14 @@
     width: 50%;
     flex: 1 1 50%; 
   }
+  
+  &--section{
+    width: 50%;
+    flex: 0 1 48%;
+    margin: 5px;
+    padding: 5px;
+    border: 1px $primary-color solid;
+  }
 
   &--submit {
     width: 100%;
