@@ -88,6 +88,9 @@ let teams = {
   }, 
   "belfast-azlans": {
     "name": "Belfast Azlans"
+  },
+  "hull-roundheads": {
+    "name": "Hull Roundheads"
   }
 }
 
