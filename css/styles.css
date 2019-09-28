@@ -1870,7 +1870,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 300;
 }
 
@@ -2136,13 +2136,19 @@ header {
 .c-team-vs .sections {
   text-align: center;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 33%;
-          flex: 0 1 33%;
+      -ms-flex: 0 0 35%;
+          flex: 0 0 35%;
   max-width: 40%;
 }
 
+.c-team-vs .sections:nth-of-type(2n) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+}
+
 .c-team-vs .logo {
-  height: 200px;
+  height: 175px;
   width: 100%;
   background-size: contain;
   background-position: center;
@@ -2170,7 +2176,7 @@ header {
 }
 
 .u-text-huge {
-  font-size: 6rem;
+  font-size: 5.5rem;
 }
 
 @media (max-width: 738px) {

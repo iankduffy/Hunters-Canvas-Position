@@ -2,12 +2,16 @@
   flex-wrap: nowrap;
   .sections {
     text-align: center;
-    flex: 0 1 33%;
+    flex: 0 0 35%;
     max-width: 40%;
+    
+    &:nth-of-type(2n){
+      flex: 0 1 25%;
+    }
   }
 
   .logo {
-    height: 200px;
+    height: 175px;
     width: 100%;
     background: {
       size: contain; 
@@ -17,6 +21,6 @@
   }
 
   &-text {
-    flex: 0 1 30%;
+    flex: 0 1 30%; 
   }
 }
