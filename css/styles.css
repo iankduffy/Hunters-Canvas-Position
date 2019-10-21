@@ -1986,8 +1986,16 @@ header {
   height: 628px;
 }
 
-.c-canvas-fb.c-canvas * {
+.c-canvas-fb.c-canvas .h2 {
   font-size: 2.2rem;
+}
+
+.c-canvas-fb.c-canvas .h3 {
+  font-size: 2rem;
+}
+
+.c-canvas-fb.c-canvas .h4 {
+  font-size: 1.6rem;
 }
 
 .c-canvas-fb.c-canvas .u-text-huge {
