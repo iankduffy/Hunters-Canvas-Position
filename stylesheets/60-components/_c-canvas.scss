@@ -9,9 +9,17 @@
     position: center; 
   }
 
-  &-fb {
+  &-fb.c-canvas  {
     width: 1200px;
     height: 628px;
+
+    * {
+      font-size: 2.2rem;
+    }
+
+    .u-text-huge {
+      font-size: 5rem;
+    }
   }
 
   &-gram {

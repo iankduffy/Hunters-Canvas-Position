@@ -1981,9 +1981,17 @@ header {
   background-position: center;
 }
 
-.c-canvas-fb {
+.c-canvas-fb.c-canvas {
   width: 1200px;
   height: 628px;
+}
+
+.c-canvas-fb.c-canvas * {
+  font-size: 2.2rem;
+}
+
+.c-canvas-fb.c-canvas .u-text-huge {
+  font-size: 5rem;
 }
 
 .c-canvas-gram {
